@@ -2,17 +2,23 @@
 <!--[if IE 9]><html class="lt-ie10" lang="en" > <![endif]-->
 <html class="no-js" lang="en" >
 <head>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/foundation.min.css">
+  <link href="/css/application.css" rel="stylesheet" type="text/css">
 	<script type="text/javascript" src="https://www.google.com/jsapi"></script>
   <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
 	<script src="/javascript/support.js"></script>        
 	<script src="/javascript/application.js"></script>
-	<link href="/css/application.css" rel="stylesheet" type="text/css">
+	<script src="javascript/vendor/modernizr.min.js"></script>
+	
   <title>Motivational Posters</title>
 </head>
 <body>
   <header>
     <h1>Motivational posters</h1>
   </header>
+
 
 	 <section id="select-image">
 	  <h2>Step 1. Select an image</h2>
@@ -29,11 +35,25 @@
 	</section>
 
 	<section id="style-image">
-  <h2>Step 3. Style it!</h2>
-  <div id="workspace">
-    <p id="caption"></p>
-  </div>
+	  <h2>Step 3. Style it!</h2>
+	  <div id="workspace">
+	    <p id="caption"></p>
+	  </div>
 	</section>
+
+	<div id="twitter">
+    <a href="https://twitter.com/share" class="twitter-share-button" data-text="I built Motivational Posters page today @makersacademy!">Tweet</a>
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+</div>
+
+
+ 	<script src="javascript/vendor/jquery.min.js"></script>
+  <script src="javascript/foundation.min.js"></script>
+  <script>
+    $(document).foundation();
+  </script>
+
+
 
 </body>
 </html>
